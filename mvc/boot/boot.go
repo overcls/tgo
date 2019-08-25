@@ -9,21 +9,23 @@ type IBoot interface {
 }
 
 type Boot struct {
-	Router *gin.Engine
+	App *gin.Engine
 }
 
-var App Boot
+
 func init()  {
 
-	App = Boot{
-		Router:new(gin.Engine),
-	}
 
 
+
+}
+
+func (boot *Boot) Init()  {
+	boot.App=new(gin.Engine)
 }
 
 func (boot *Boot) NameSpaces(ns string)  {
 
-	boot.Router.Group(ns)
+	boot.App.Group(ns)
 
 }
