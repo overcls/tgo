@@ -7,6 +7,7 @@ import (
 )
 
 var (
+	Boot
  DB *orm.DB
 
  Web *gin.Engine
