@@ -13,12 +13,7 @@ type Boot struct {
 }
 
 
-func init()  {
 
-
-
-
-}
 
 func (boot *Boot) Init()  {
 	boot.App=new(gin.Engine)

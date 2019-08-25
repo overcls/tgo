@@ -5,11 +5,9 @@ type IHash interface {
 	Decode() string
 }
 
-
-
 type Hash struct {
 
-	config string
+	Config string
 }
 
 type Video struct {
